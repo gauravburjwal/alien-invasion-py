@@ -1,4 +1,3 @@
-import sys
 import pygame
 from settings import Settings
 from ship import Ship
@@ -17,15 +16,7 @@ def run_game():
 
     # start the main loop for the game
     while True:
-
-        # watch for keyboard and mouse events
         gf.check_events()
-
-        # redraw the screen during each pass through the loop.
-        screen.fill(ai_settings.bg_color)
-        ship.blitme()
-
-        # make the most recently drawn screen visible.
-        pygame.display.flip()
+        gf.update_screen(ai_settings, screen, ship)
 
 run_game()
