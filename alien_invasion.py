@@ -11,9 +11,6 @@ def run_game():
     )
     pygame.display.set_caption("Alien Invasion")
 
-    # set the background color.
-    bg_color = (175, 175, 175)
-
     # start the main loop for the game
     while True:
 
